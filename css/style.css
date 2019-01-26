@@ -153,7 +153,7 @@ header > div {
 	overflow: hidden;
 	background-color: white;
 }
-.navigation h2 {
+.navigation > h2 {
 	display: none;
 }
 .navigation_menu {
@@ -500,6 +500,7 @@ footer > p small {
 	.basket {
 		align-self: center;
 		margin-top: 1rem;
+		padding-left: 0;
 	}
 	.navigation {
 		width: 60rem;
@@ -562,6 +563,20 @@ footer > p small {
 	}
 	.search-item p a {
 		font-size: 1rem;
+	}
+	.payment-form fieldset p {
+		align-items: center;
+		width: auto;
+		flex-direction: column;
+	}
+	.payment-form fieldset p label, fieldset p input {
+		flex: none;
+	}
+	.payment-form fieldset p span {
+		display: none;
+	}
+	.payment-form fieldset p label {
+		text-align: initial;
 	}
 	footer {
 		margin-bottom: 3rem;
