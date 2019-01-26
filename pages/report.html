@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="icon" type="image/jpeg" href="../img/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" /> 
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Gilles &amp; Jones - Détails techniques</title>
+</head>
+<body>
+	<div class="site">
+		<header>
+			<div></div>
+			<div>
+				<h1 id="website-title"><a href="../index.html">Gilles &amp; Jones</a></h1>
+				<form id="searchform" action="search.html" method="POST">
+					<input type="search" name="searchBar" title="Barre de recherche"  placeholder="Que cherchez-vous à acheter ?" />
+					<button type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+			<div class="basket">
+				<a href="basketEmpty.html" title="Lien vers votre panier"><i class="fas fa-shopping-cart fa-2x"></i> <span>(0)</span></a>
+			</div>
+		</header>
+        <main class="main-aboutus-report">
+			<h2><span></span>Détails techniques<span></span></h2>
+			<p>
+				Le site web est entièrement statique et réalisé en HTML5 et CSS3 purs. Pas de BootStrap, de JavaScript, de PHP ou de préprocesseurs (LESS, SASS, ...).<br />
+				Cependant, deux CDN ont été utilisés : celui de Google Fonts (pour la police) ainsi que celui de Font Awesome (pour les logos).<br />
+				Le projet contient un total de 16 pages HTML ainsi qu'1 fichier CSS et des images.<br />
+				Les pages HTML contenant &laquo; AddCart &raquo;, &laquo; FullCart &raquo;, &laquo; Empty &raquo;, ... permettent de simuler une navigation cohérente en fonction de si vous avez ou non ajouté un élément à votre panier. Les liens redirigent donc vers ces pages nécessaires à la bonne navigation.
+			</p>
+			<p>
+				Nous avons tenté de rendre le site un maxium accessible en choisissant les bonnes balises et n'oubliant pas les attributs alt="" sur les images par exemple, on encore les label associés aux input ou des title="" sur les liens.<br />
+				Le code CSS a été séparé du code HTML (mis à part pour 2 paragraphes dans la page aboutus.html car il s'agit de contenu exceptionnel associé au projet (nos noms et un disclaimer)).<br />
+				Nous avons utilisé énormément de classes pour sélectionné nos balises en CSS, cependant nous n'utilisons pas de méthodologie de nommage (OOCSS, BEM, ...) bien que certaines classes peuvent y ressembler.
+			</p>
+			<p>
+				L'unité CSS que nous avons le plus utilisé est le rem. En effet, le rem se base sur une unité définie sur la balise html et non sur les balises parents. Ainsi, en ayant défini une unité de base de 16px (celle par défaut des navigateurs) via la propriété font, nous nous assurons de toujours avoir des tailles cohérentes (taille de la police, marges externes/internes, largeur, hauteur, ...).<br />
+			</p>
+			<p>
+				Un slider animé et responsive a été mis en place ainsi que plusieurs effets de survols qui disparraissent en fonction de la taille de l'écran (notamment pour ne pas gêner la navigation sur écrans tactiles).
+			</p>
+			<p>
+				La méthode de mise en page utilisée est principalement le module natif de CSS3 : FlexBox. Nous l'avons énormément utilisé, surtout pour des alignements centrés de nos éléments.<br />
+				Les espacements sont majoritairement gérés avec les marges internes/externes. A l'exception d'une div vide au niveau du header qui est utilisée afin d'assurer que le titre et la barre de recherche soient bien centrés grâce à un <code>flex: 1;</code> sur les éléments enfants du header.<br />
+				Les propriétés positions ont été utilisés pour afficher un menu fixe, initialement appartenant à la section du slider, en bas de l'écran sur les écrans des téléphones portables.
+			</p>
+			<p>
+				Toutes les pages HTML et CSS ont été vérifiées avec le validateur de la W3C et aucune erreur ne semble être survenue.
+			</p>
+			<p>
+				La plupart des navigateurs semblent être supportés (même Internet Explorer 11 !) bien que nous n'ayons pu tester avec une version récente de Safari (pas de Mac).
+				Pour le responsive, FlexBox a été utilisé pour replacer les éléments (wrap). Ainsi que l'utilisation en amont de propriétés responsives (rem pour le zoomage, max-width plutôt que width sur les éléments de type block, ...) et enfin les media queries.
+			</p>
+        </main>
+        <footer>
+             <div>
+                <p><a href="aboutus.html" title="Contact et infos sur les créateurs">Qui sommes nous ?</a></p>
+                <p><a href="report.html" title="Détails techniques">Détails techniques</a></p>
+            </div>
+            <p><small>&copy; 2018/2019 Gilles &amp; Jones - Tous droits réservés</small></p>
+        </footer>
+	</div><!-- End of div.site -->
+</body>
+</html>

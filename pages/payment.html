@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="icon" type="image/jpeg" href="../img/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" /> 
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Gilles &amp; Jones - Paiement</title>
+</head>
+<body>
+	<div class="site">
+		<header>
+			<div></div>
+			<div>
+				<h1 id="website-title"><a href="indexFullCart.html">Gilles &amp; Jones</a></h1>
+				<form id="searchform" action="searchFullcart.html" method="POST">
+					<input type="search" name="searchBar" title="Barre de recherche"  placeholder="Que cherchez-vous à acheter ?" />
+					<button type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+			<div class="basket">
+				<a href="basketFull.html" title="Lien vers votre panier"><i class="fas fa-shopping-cart fa-2x"></i> <span>(1)</span></a>
+			</div>
+		</header>
+        <main>
+            <h2><span></span>Paiement<span></span></h2>
+            <p class="price-to-pay">Total à payer : <span>10.98€ TTC</span></p>
+            <form class="payment-form" action="paymentSuccess.html" method="POST">
+                <fieldset>
+                    <legend>Adresse de facturation et de livraison</legend>
+                    <p><label for="delivery-name">Nom et prénom : </label><span></span><input type="text" name="delivery-name" id="delivery-name" required /></p>
+                    <p><label for="delivery-address">Adresse : </label><span></span><input type="text" name="delivery-address" id="delivery-address" required /></p>
+                    <p><label for="delivery-city">Ville : </label><span></span><input type="text" name="delivery-city" id="delivery-city" required /></p>
+                    <p><label for="zip-code">Code postal : </label><span></span><input type="number" name="zip-code" id="zip-code" placeholder="69000" required /></p>
+                    <p><label for="phone-number">Numéro de téléphone : </label><span></span><input type="number" name="phone-number" id="phone-number" placeholder="01 02 03 04 05" required /></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Vos informations de paiement</legend>
+                    <p><label for="payment-name">Nom du titulaire : </label><span></span><input type="text" name="payment-name" id="payment-name" required /></p>
+                    <p><label for="card-number">Numéro de la carte : </label><span></span><input type="number" name="card-number" id="card-number" required /></p>
+                    <p><label for="expiration-date">Date d'expiration : </label><span></span><input type="text" name="expiration-date" id="expiration-date" placeholder="MM / YYYY" required /></p>
+                    <p><label for="validation-code">CVV : </label><span></span><input type="number" name="validation-code" id="validation-code" placeholder="000" required /></p>
+                </fieldset>
+                <button>Valider et payer</button>
+            </form>
+		</main>
+		<footer>
+			<div>
+				<p><a href="aboutus.html" title="Contact et infos sur les créateurs">Qui sommes nous ?</a></p>
+				<p><a href="report.html" title="Détails techniques">Détails techniques</a></p>
+			</div>
+			<p><small>&copy; 2018/2019 Gilles &amp; Jones - Tous droits réservés</small></p>
+		</footer>
+	</div><!-- End of div.site -->
+</body>
+</html>

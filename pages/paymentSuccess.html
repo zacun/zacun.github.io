@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="icon" type="image/jpeg" href="../img/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" /> 
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Gilles &amp; Jones - Votre panier</title>
+</head>
+<body>
+	<div class="site">
+		<header>
+			<div></div>
+			<div>
+				<h1 id="website-title"><a href="indexFullCart.html">Gilles &amp; Jones</a></h1>
+				<form id="searchform" action="search.html" method="POST">
+					<input type="search" name="searchBar" title="Barre de recherche"  placeholder="Que cherchez-vous à acheter ?" />
+					<button type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+			<div class="basket">
+				<a href="basketEmpty.html" title="Lien vers votre panier"><i class="fas fa-shopping-cart fa-2x"></i> <span>(0)</span></a>
+			</div>
+		</header>
+        <div class="alert alert-add">
+            Votre paiement a bien été validé, le temps de livraison est de 3 jours ouvrés. Un e-mail comprenant les informations de commandes vous a été envoyé. 
+            <a href="basketEmpty.html" title="Enlever la notification"><i class="far fa-times-circle"></i></a>
+        </div>
+        <main>
+			<div class="basket-info">
+				<p>Nombre d'éléments dans votre panier : 0</p>
+				<p>Montant total de vos courses : 0.00€</p>
+			</div>
+			<section class="empty-basket">
+				<h2><span></span>Votre panier<span></span></h2>
+				<p class="alert alert-indication">Votre panier est vide.</p>
+			</section>
+		</main>
+		<footer>
+			<div>
+				<p><a href="aboutus.html" title="Contact et infos sur les créateurs">Qui sommes nous ?</a></p>
+				<p><a href="report.html" title="Détails techniques">Détails techniques</a></p>
+			</div>
+			<p><small>&copy; 2018/2019 Gilles &amp; Jones - Tous droits réservés</small></p>
+		</footer>
+	</div><!-- End of div.site -->
+</body>
+</html>
