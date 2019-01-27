@@ -193,11 +193,14 @@ header > div {
 }
 .navigation_promo span {
 	font-weight: bold;
-	font-size: 1.25rem;
 }
 .navigation_promo h2 {
 	text-align: center;
 	margin: 0;
+}
+.navigation_promo img {
+	max-width: 15rem;
+	width: 100%;
 }
 /**********/
 /* Footer */
@@ -466,10 +469,16 @@ footer > p small {
 		border-bottom-left-radius: 15px;
 	}
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
 	.navigation {
 		width: 70rem;
 		height: 25rem;
+	}
+	.navigation_promo h2 {
+		font-size: 1.15rem;
+	}
+	.navigation_promo > p {
+		margin: 0;
 	}
 	.item {
 		overflow: visible;
@@ -504,8 +513,25 @@ footer > p small {
 		padding-left: 0;
 	}
 	.navigation {
-		width: 60rem;
-		height: 20rem;;
+		flex-direction: column;
+		width: auto;
+		height: auto;
+		overflow: visible;
+		margin: auto 1rem;
+	}
+	.navigation_menu {
+		width: auto;
+		height: 2.5rem;
+		flex-direction: row;
+	}
+	.navigation_promo {
+		width: auto;
+	}
+	.navigation_promo h2 {
+		font-size: 1.5rem;
+	}
+	.navigation_promo img {
+		max-width: 12rem;
 	}
 	main {
 		padding-left: .5rem;
@@ -518,20 +544,6 @@ footer > p small {
 @media screen and (max-width: 1000px) {
 	#website-title {
 		margin-top: 0;
-	}
-	.navigation {
-		flex-direction: column;
-		width: 100%;
-		height: auto;
-		overflow: visible;
-	}
-	.navigation_menu {
-		width: auto;
-		height: 2.5rem;
-		flex-direction: row;
-	}
-	.navigation_promo {
-		width: auto;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -551,6 +563,9 @@ footer > p small {
 	}
 	.navigation_menu a {
 		font-size: 0.8rem;
+	}
+	.navigation_promo img {
+		max-width: 10rem;
 	}
 	.item figcaption {
 		display: block;
